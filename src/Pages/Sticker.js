@@ -8,7 +8,7 @@ import profileIcon from "../assets/Images/profileIcon.png";
 const Sticker = () => {
   return (
     <div className="mt-40 bg-gradient-to-r from-[rgb(63,224,255)] via-[rgb(129,87,254)] to-[rgb(167,9,253)] border border-none rounded-md">
-      <div className="flex flex-col justify-center items-center space-y-4 p-4">
+      <div className="flex flex-col justify-center items-center space-y-4 p-4 md:flex-row md:justify-around">
         <div className="flex items-center space-x-4 py-4 ml-4">
           <img src={headIcon} alt="head icon" className="w-1/5" />
           <p className="text-white text-base font-medium w-2/5">

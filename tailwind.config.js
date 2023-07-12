@@ -17,7 +17,11 @@ module.exports = {
 
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      // colors:{
+      //   'pinker':'#333'
+      // }
+    },
   },
   variants: {
     extend: {},

@@ -23,14 +23,14 @@ const Banner = () => {
         <Header />
 
         {/* Big Text */}
-        <div className="hidden text-center mt-12">
+        {/* <div className="hidden text-center mt-12">
           <h1 className="text-white text-6xl font-bold">
             Lorem ipsum dolor sit <br />
             consectetur Blockchain
           </h1>
-        </div>
+        </div> */}
 
-        {/* Mobile Screen TEXT */}
+        {/* Mobile Screen TEXT with Responsiveness */}
         <div className="text-center mt-12 px-5">
           <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold">
             Lor<span className="bg-gradient-to-r text-transparent from-blue-400 to-purple-400 bg-clip-text">em</span> ipsum dolor <br />
@@ -39,8 +39,8 @@ const Banner = () => {
         </div>
 
         {/* text input and text FOR WEBSITE */}
-        <div className="flex flex-col items-center mt-12 ">
-          <div className="hidden w-2/5 h-12 rounded-3xl border border-white bg-transparent px-1 text-white text-base justify-between ">
+        <div className="flex flex-col items-center mt-12">
+          <div className="hidden md:flex w-2/5 h-12 rounded-3xl border border-white bg-transparent px-1 text-white text-base justify-between ">
             <input
               type="text"
               placeholder="Enter Id Here"
@@ -55,7 +55,7 @@ const Banner = () => {
           </div>
 
           {/* For Mobile Screen INPUT FIELDS */}
-          <div className="flex flex-col items-center w-full">
+          <div className="flex flex-col items-center w-full md:hidden">
             <input
               type="text"
               placeholder="Type or Paste a URL"

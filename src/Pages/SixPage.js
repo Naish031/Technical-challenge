@@ -25,14 +25,14 @@ const SixPage = () => {
             </p>
           </h1>
           <div className="mt-6 mb-10">
-            <p className="text-[#A6A9B8] text-base text-center">
+            <p className="md:hidden text-[#A6A9B8] text-base text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit{" "}
             </p>
-            <p className="text-white text-base font-medium text-center mt-4">
+            <p className="md:hidden text-white text-base font-medium text-center mt-4">
               info@loremipsum.com
             </p>
           </div>
-          <div className="lg:w-1/2 flex justify-center items-center">
+          <div className=" md:hidden lg:w-1/2 flex justify-center items-center">
             <div className="bg-gray-900 bg-opacity-60 lg:w-4/5">
               <h2 className="text-white text-center text-3xl px-10 py-3 pt-6 font-bold">
                 Contact
@@ -72,36 +72,37 @@ const SixPage = () => {
             </div>
           </div>
         </div>
+
         {/* WEBSITE DESIGN (BELOW) */}
-        {/* <div className="lg:w-1/2 flex justify-center items-center">
-          <div className="bg-gray-900 bg-opacity-60 lg:w-4/5">
+        <div className="hidden md:flex lg:w-1/2 justify-center items-center">
+          <div className="bg-gray-900 bg-opacity-60 md:w-full md:mr-10">
             <h2 className="text-white text-3xl px-10 py-3 pt-6 font-bold">
               Contact
             </h2>
-            <div className="my-7 mx-10">
+            <div className="my-7 mx-6">
               <input
                 type="text"
-                className="bg-transparent pl-4 py-3 border border-white mr-3 w-2/5"
+                className="bg-transparent pl-3 py-3 border border-white mr-7 w-2/5"
                 placeholder="First Name"
               />
               <input
                 type="text"
-                className="bg-transparent pl-4 py-3 border border-white w-2/5"
+                className="bg-transparent pl-3 py-3 border border-white w-2/5"
                 placeholder="Last Name"
               />
             </div>
 
-            <div className="my-5 mx-10">
+            <div className="my-5 mx-6">
               <input
                 type="email"
-                className="bg-transparent w-4/5 pl-4 py-3 border border-white"
+                className="bg-transparent w-5/6 pl-4 py-3 border border-white"
                 placeholder="Email"
               />
             </div>
-            <div className="mx-10">
+            <div className="mx-6">
               <textarea
                 type="text"
-                className="bg-transparent w-4/5 pl-4 pt-4 h-40 border border-white"
+                className="bg-transparent w-5/6 pl-4 pt-4 h-40 border border-white"
                 placeholder="Message"
               />
             </div>
@@ -111,11 +112,11 @@ const SixPage = () => {
               </button>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
 
       {/* WEBSITE TEXT (BELOW) */}
-      <div className="hidden w-1/2 flex items-center justify-center pb-20">
+      <div className="hidden w-1/2 md:flex items-center justify-center pb-20">
         <p className="text-white text-2xl font-medium">info@loremipsum.com</p>
       </div>
     </div>

@@ -10,8 +10,6 @@ import mobileIconOne from "../assets/Images/mobileICON(1).png";
 import mobileIconTwo from "../assets/Images/mobileICON(2).png";
 import mobileIconThree from "../assets/Images/mobileICON(3).png";
 
-// import Steps from "../Components/Steps";
-
 const FourthPage = () => {
   const divStyle = {
     backgroundImage: `url(${fourthPageScreen})`,
@@ -19,7 +17,6 @@ const FourthPage = () => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     width: "100%",
-    // Adjust the height as per your requirements
   };
   return (
     <div style={divStyle}>
@@ -38,7 +35,7 @@ const FourthPage = () => {
           </p>
         </div>
         {/* Div CARDS For MOBILE SCREEN */}
-        <div className="flex flex-row mt-12 flex-wrap justify-center ">
+        <div className="md:hidden flex flex-row mt-12 flex-wrap justify-center ">
           {Array.from({ length: 3 }).map((item, index) => {
             return (
               <div
@@ -74,7 +71,7 @@ const FourthPage = () => {
         </div>
 
         {/* Cards DIV FOR WEBSITE */}
-        {/* <div className="flex flex-row mt-28 flex-wrap justify-center ">
+        <div className="hidden md:flex flex-row mt-28 flex-wrap justify-center ">
           {Array.from({ length: 6 }).map((item, index) => {
             return (
               <div
@@ -108,7 +105,7 @@ const FourthPage = () => {
               </div>
             );
           })}
-        </div> */}
+        </div>
 
         {/* SECOND PART OF SCREEN */}
         <div className="mt-12 w-4/5 lg:mt-28 lg:w-full">
@@ -118,13 +115,12 @@ const FourthPage = () => {
             </span>{" "}
             Process Explained
           </h1>
-          <p className="text-center text-[#D7D7D7] mt-5 text-xs px-3 lg:px-0 lg:text-lg">
+          <p className="text-center text-[#D7D7D7] mt-5 text-xs px-3 md:px-0 md:text-lg md:">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do{" "}
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
       </div>
-      {/* <Steps /> */}
     </div>
   );
 };

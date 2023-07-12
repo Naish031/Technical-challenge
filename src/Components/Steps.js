@@ -19,7 +19,7 @@ const Steps = () => {
     <div style={backgroundStyle}>
       <div className="flex justify-center pt-10 ">
         {/* Steps FOR MOBILE DEISGNS */}
-        <div className="">
+        <div className="md:hidden">
           {Array.from({ length: 4 }).map((item, index) => {
             return (
               <div key={index} className="mb-4">
@@ -45,10 +45,10 @@ const Steps = () => {
 
         {/* Card Steps Div FOR WEBSITE*/}
 
-        {/* <div className="w-1/3">
+        <div className="hidden md:flex md:flex-col w-1/3 ">
           {Array.from({ length: 2 }).map((item, index) => {
             return (
-              <div key={index} className="pt-2 h-2/4 mb-24">
+              <div key={index} className={`pt-2 h-2/4 mb-32 ${index === 1 ? "mt-48":""}`}>
                 <h3 className="text-white text-xl text-right font-extrabold mb-8">
                   Step {index === 0 ? 1 : 3}
                 </h3>
@@ -63,18 +63,21 @@ const Steps = () => {
               </div>
             );
           })}
-        </div> */}
+        </div>
 
-        {/* <div className=" w-1/12 flex justify-center">
+        <div className="hidden md:flex w-1/12 justify-center">
           <img src={stepImage} alt="steps" className=" h-full" />
-        </div> */}
+        </div>
 
-        {/* <div className="w-1/3">
+        <div className="hidden md:flex md:flex-col w-1/3">
           {Array.from({ length: 2 }).map((item, index) => {
             return (
               <div
                 key={index}
-                className={`h-2/4 ${index === 1 ? "mt-48" : "mt-64"}`}
+                className={`h-2/4 ${index === 1 ? "mt-64 " : "mt-64 "}
+                `
+                
+              }
               >
                 <h3 className="text-white text-xl text-left font-extrabold mb-8">
                   Step {index === 0 ? 2 : 4}
@@ -90,7 +93,7 @@ const Steps = () => {
               </div>
             );
           })}
-        </div> */}
+        </div>
       </div>
 
       {/* Next Part of the screen */}
@@ -114,7 +117,7 @@ const Steps = () => {
         </div>
       </div>
 
-      <div className="hidden pt-0 lg:pt-10">
+      <div className="hidden md:flex md:items-center md:justify-center pt-0 lg:pt-10">
         <h1 className="text-white text-5xl text-center font-extrabold">
           Join the{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-sky-300">
@@ -123,7 +126,7 @@ const Steps = () => {
           movement!
         </h1>
       </div>
-      <div className="hidden flex flex-row justify-center mt-10 pb-20">
+      <div className="hidden md:flex flex-row justify-center mt-10 pb-20">
         {Array.from({ length: 3 }).map((item, index) => {
           return (
             <div key={index} className="border rounded-lg w-1/4 m-5">
